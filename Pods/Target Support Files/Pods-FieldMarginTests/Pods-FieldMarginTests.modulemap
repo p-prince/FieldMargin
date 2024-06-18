@@ -1,0 +1,6 @@
+framework module Pods_FieldMarginTests {
+  umbrella header "Pods-FieldMarginTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

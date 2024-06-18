@@ -1,0 +1,6 @@
+framework module Pods_FieldMargin_FieldMarginUITests {
+  umbrella header "Pods-FieldMargin-FieldMarginUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
