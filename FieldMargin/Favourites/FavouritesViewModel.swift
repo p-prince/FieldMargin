@@ -1,5 +1,11 @@
 import Foundation
 
+protocol FavouritesViewModelProtocol: ObservableObject {
+    var certificates: [Certificate] { get }
+
+    func loadCertificates()
+}
+
 final class FavouritesViewModel: FavouritesViewModelProtocol {
     @Published var certificates: [Certificate] = []
 

@@ -1,8 +1,13 @@
 import Foundation
 import Combine
 
+@MainActor
 protocol ContentViewModelProtocol: ObservableObject {
-    
+    var error: Error? { get }
+    var showAlert: Bool { get }
+    var alertMessage: String { get }
+
+    func fetchCertificates(limit: Int, page: Int)
 }
 
 @MainActor
